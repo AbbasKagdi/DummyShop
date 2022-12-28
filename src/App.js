@@ -1,23 +1,19 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import { Navbar } from './components/navbar';
-import { Home } from './components/home';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
-import { About } from './components/about';
+import Header from './components/Header';
+import Home from "./components/Home"
+import Cart from "./components/Cart"
 
 function App() {
   return (
     <div className="App">
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route exact path="/" element={<Home />}></Route>
-            <Route exact path="/about" element={<About />}></Route>
-          </Routes>
-        </Router>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route exact path="/" element={ <Home /> } />
+          <Route exact path="/cart" element={ <Cart /> }/>
+        </Routes>
+      </BrowserRouter>  
     </div>
   );
 }

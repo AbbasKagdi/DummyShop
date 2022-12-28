@@ -18,6 +18,14 @@ export const Navbar = () => {
            <Link className="nav-link" to="/about">About</Link>
         </li>
       </ul>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          0
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {/* <a class="dropdown-item" href="#">Action</a> */}
+        </div>
+      </li>
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
         <button className="btn btn-outline-success" type="submit">Search</button>
