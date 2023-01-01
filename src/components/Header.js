@@ -13,7 +13,7 @@ function Header() {
                 <FormControl style={{width:500}} placeholder="Search Yummies" className="m-auto" />
             </Navbar.Text>
             <Nav>
-                <Dropdown>
+                <Dropdown align={{ sm:"right" }}>
                     <Dropdown.Toggle variant="success">
                         <FaShoppingCart color="white" fontSize="25px" />
                         <Badge bg="transparent">{10}</Badge>

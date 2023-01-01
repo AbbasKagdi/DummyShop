@@ -21,10 +21,7 @@ const Context = ({children}) => {
     })
 
     return (
-        <Cart.Provider value={{state, dispatch}}>
-        {/* <Cart.Provider> */}
-            {children}
-        </Cart.Provider>
+        <Cart.Provider value={{state, dispatch}}>{children}</Cart.Provider>
     )
 }
 
